@@ -34,4 +34,4 @@ jobs:
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Check dependencies
-        run: $HOME/.local/bin/magick -version
+        run: cat magick

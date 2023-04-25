@@ -42,3 +42,13 @@ jobs:
           sh ./Scripts/makeIcons.sh ./Sources/Icon_background.png ./Sources/Icon_foreground.png $HOME/work
           ls $HOME/work/AppIcons/Android/drawable-hdpi
           
+      - name: Copy files to another repository
+        uses: nkoppel/push-files-to-another-repository@v1.1.1
+        env: 
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-files: '$HOME/work'
+          destination-username: 'yamakami-shinobu-gn'
+          destination-repository: 'yamakami-shinobu-gn/sandbox'
+          destination-directory: 'AppIcons'
+          commit-email: 'yamakami_shinobu_gn@cyberagent.co.jp'

@@ -47,7 +47,7 @@ jobs:
         env: 
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-files: '$HOME/work'
+          source-files: "$HOME/work/AppIcons"
           destination-username: 'yamakami-shinobu-gn'
           destination-repository: 'sandbox'
           destination-directory: 'AppIcons'

@@ -36,5 +36,9 @@ jobs:
           mv magick "$HOME/.local/bin"
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
-      - name: Check dependencies
-        run: magick -version
+      - name: Convert
+        run: |
+          mkdir "$HOME/work"
+          sh ./Scripts/makeIcons.sh ./Sources/Icon_background.png ./Sources/Icon_foreground.png $HOME/work
+          ls $HOME/work/AppIcons/Android/drawable-hdpi
+          

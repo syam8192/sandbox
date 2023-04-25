@@ -49,6 +49,6 @@ jobs:
         with:
           source-files: '$HOME/work'
           destination-username: 'yamakami-shinobu-gn'
-          destination-repository: 'yamakami-shinobu-gn/sandbox'
+          destination-repository: 'sandbox'
           destination-directory: 'AppIcons'
           commit-email: 'yamakami_shinobu_gn@cyberagent.co.jp'
